@@ -1,0 +1,421 @@
+.app {
+  min-height: 100vh;
+  color: #f1f5f9;
+  background:
+    radial-gradient(ellipse at 10% 0%, #1b3556, transparent 40%),
+    radial-gradient(ellipse at 100% 60%, #16334a, transparent 35%),
+    #0b1120;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 7%;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  font-size: 36px;
+  color: #60a5fa;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.live {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #34d399;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.unit-toggle {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.container {
+  width: 88%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 55px 0;
+}
+
+.intro {
+  margin-bottom: 35px;
+}
+
+.overline {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #60a5fa;
+  font-weight: 700;
+}
+
+.intro h1 {
+  font-size: clamp(35px, 5vw, 55px);
+  margin: 15px 0;
+}
+
+.intro h1 span {
+  color: #60a5fa;
+}
+
+.intro-text {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.search-area {
+  margin-bottom: 35px;
+}
+
+.search {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #182338;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.search > span {
+  font-size: 25px;
+  color: #94a3b8;
+  padding-left: 12px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.search input::placeholder {
+  color: #64748b;
+}
+
+.search button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 11px;
+  padding: 14px 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #2563eb;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.favorite-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #64748b;
+}
+
+.favorites button {
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.favorites button:hover {
+  background: #26354b;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(130deg, #1e3a5f, #1b2940, #172337);
+  border: 1px solid #ffffff12;
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: 0 25px 50px #00000020;
+}
+
+.location {
+  color: #cbd5e1;
+  font-size: 16px;
+}
+
+.hero-left h2 {
+  font-size: clamp(70px, 10vw, 105px);
+  font-weight: 300;
+  margin: 25px 0 10px;
+}
+
+.condition {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.feels {
+  color: #94a3b8;
+}
+
+.hero-right {
+  text-align: center;
+}
+
+.hero-icon {
+  display: block;
+  font-size: clamp(70px, 10vw, 110px);
+}
+
+.high-low {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  color: #cbd5e1;
+  margin-top: 20px;
+}
+
+.section {
+  margin-top: 55px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-heading .overline {
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.forecast-card {
+  text-align: center;
+  background: #172338;
+  border: 1px solid #ffffff0d;
+  border-radius: 20px;
+  padding: 24px 12px;
+  transition: transform 0.2s;
+}
+
+.forecast-card:hover {
+  transform: translateY(-4px);
+  background: #203149;
+}
+
+.day {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.forecast-icon {
+  display: block;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.forecast-condition {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.forecast-card h3 {
+  font-size: 23px;
+  margin: 15px 0 5px;
+}
+
+.low {
+  color: #64748b;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.detail-card {
+  background: #172338;
+  border: 1px solid #ffffff0d;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.detail-card > span {
+  font-size: 30px;
+}
+
+.detail-card p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.detail-card h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.empty {
+  text-align: center;
+  padding: 70px 20px;
+  background: #17233888;
+  border: 1px dashed #334155;
+  border-radius: 25px;
+}
+
+.empty > span {
+  font-size: 75px;
+}
+
+.empty p {
+  color: #94a3b8;
+}
+
+.message {
+  text-align: center;
+  padding: 25px;
+  color: #60a5fa;
+}
+
+.error {
+  padding: 16px;
+  color: #fecaca;
+  background: #451a1a;
+  border: 1px solid #7f1d1d;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ffffff10;
+  padding: 35px 20px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.footer-brand {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 750px) {
+  .header {
+    padding: 20px;
+  }
+
+  .container {
+    width: 92%;
+    padding: 35px 0;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-right {
+    gap: 10px;
+  }
+
+  .live {
+    font-size: 9px;
+  }
+
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search button {
+    padding: 12px 15px;
+  }
+
+  .search input {
+    padding: 8px 4px;
+    font-size: 14px;
+  }
+}
